@@ -1,0 +1,13 @@
+/* ショート動画を縦長カードで並べる（/method/「1分で分かるネイキッドトレード」。/movie/ は11/22削除） */
+.shorts{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.shorts .yt{border-radius:12px}
+@media (max-width:820px){
+  .shorts{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-right:-20px;padding:4px 20px 12px 0}
+  .shorts .yt{flex:none;width:58%;scroll-snap-align:start}
+}
+.shorts{max-width:880px;margin:0 auto}
+.btn-yt{border-color:#e23b2e;color:#e23b2e;gap:10px}
+.btn-yt::before{content:"";width:28px;height:20px;border-radius:5px;background:#e23b2e url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 20'%3E%3Cpath d='M11 6l7 4-7 4z' fill='%23fff'/%3E%3C/svg%3E") center/contain no-repeat}
+.btn-yt:hover{background:#e23b2e;color:#fff}
+.btn-yt:hover::before{background-color:#fff;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 20'%3E%3Cpath d='M11 6l7 4-7 4z' fill='%23e23b2e'/%3E%3C/svg%3E")}
+@media (max-width:820px){.shorts{display:grid;grid-template-columns:1fr 1fr;overflow:visible;margin:0;padding:0}.shorts .yt{width:auto}}
