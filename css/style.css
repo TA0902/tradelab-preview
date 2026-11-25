@@ -464,6 +464,7 @@ table{border-collapse:collapse}
   br.pc{display:none}
   .pc-only{display:none!important}
   .sp-ib{display:inline-block}
+  .fv__lead{display:block;width:100%;padding:6px 0}
   .sttl__small{display:inline-block;margin-left:0}
   .home-about .home-about__img{order:-1}
   /* 講師の活動：説明の下に写真3枚を小さく横並び（高さをそろえる） */
