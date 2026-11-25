@@ -502,3 +502,8 @@ table{border-collapse:collapse}
   .header__logo img{height:28px}
   .footer{padding-bottom:120px}
 }
+
+/* 2026-11-25 FV：上の小見出し（講師・岩本祐介から）と横線をやめ、ロゴを大きく */
+.fv__logo{margin:0 auto 24px}
+.fv__logo img{width:440px;height:auto;margin:0 auto;filter:drop-shadow(0 2px 10px rgba(0,0,0,.5))}
+@media (max-width:820px){.fv__logo{margin-bottom:18px}.fv__logo img{width:270px}}
