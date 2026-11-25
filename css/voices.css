@@ -33,3 +33,17 @@
 .shots--voices .shots__track{align-items:center}
 .shots--voices .shots__track img{height:auto;width:calc(var(--w) * .85px)}
 @media (max-width:820px){.shots--voices .shots__track img{width:calc(var(--w) * .5px)}}
+
+/* 2026-11-25 スマホのみ：インタビュー・掲示板の枠を2列に */
+@media (max-width:820px){
+  .page-voices .ivlist,.page-voices .posts{grid-template-columns:repeat(2,1fr);gap:12px}
+  .page-voices .ivcard__catch{padding:10px 12px 4px;font-size:14px;line-height:1.55}
+  .page-voices .ivcard__tag{margin:4px 12px 12px;font-size:12px;padding:2px 6px}
+  .page-voices .yt__play{transform:scale(.7)}
+  .page-voices .post{padding:12px}
+  .page-voices .post__head{gap:8px;padding-bottom:8px;margin-bottom:8px}
+  .page-voices .post__icon{width:34px;height:34px;font-size:15px}
+  .page-voices .post__name{font-size:14px}
+  .page-voices .post__date{font-size:11px}
+  .page-voices .post__body{font-size:13.5px;line-height:1.75}
+}

@@ -60,3 +60,17 @@
   .lprof{text-align:center}
   .lprof .lname__sign{margin:14px auto 0}
 }
+
+/* 2026-11-25 スマホのみ：名前・役職の右に写真／登壇・講師活動は見出しの下に写真1枚 */
+.lprof__photo{display:none}
+@media (max-width:820px){
+  .lprof{display:grid;grid-template-columns:1fr 120px;gap:16px;align-items:center;text-align:left}
+  .lprof .lname__ttl{font-size:34px}
+  .lprof .lname__role{font-size:16px;line-height:1.6}
+  .lprof__photo{display:block}
+  .lprof__photo img{width:100%;aspect-ratio:494/570;object-fit:cover;border-radius:10px}
+  .stage-sec .wrap{display:flex;flex-direction:column}
+  .stage-sec .act__photos{order:-1;margin:0 0 24px}
+  .stage-sec .sttl{order:-2}
+  .stage-sec .act__photos img:first-child{display:none}
+}
