@@ -47,3 +47,6 @@
   .page-voices .post__date{font-size:11px}
   .page-voices .post__body{font-size:13.5px;line-height:1.75}
 }
+
+/* 2026-11-25 掲示板スクショ：白い部分だけに切り出し、青いフチで統一 */
+.shots--voices .shots__track img{border:3px solid var(--blue);border-radius:10px}
